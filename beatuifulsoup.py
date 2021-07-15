@@ -1,3 +1,7 @@
+# 要安裝的套件
+!pip3 install beautifulsoup4
+!pip3 install requests
+
 # 使用 beautifulsoup 分析爬取的資料
 import requests
 from bs4 import BeautifulSoup
