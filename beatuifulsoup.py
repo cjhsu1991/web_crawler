@@ -7,3 +7,8 @@ response = requests.get(url)
 soup = BeautifulSoup(response.text,"html.parser")
 chart = soup.find(class_='jsx-413197148 jsx-556393929 transition-ratio-stock__body')
 print(chart)
+
+# find_all
+charts = soup.find_all(class_='jsx-413197148 jsx-556393929 transition-ratio-stock__body')
+for chart in charts:
+  print(chart.text)
