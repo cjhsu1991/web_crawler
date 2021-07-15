@@ -1,3 +1,4 @@
+# 使用 beautifulsoup 分析爬取的資料
 import requests
 from bs4 import BeautifulSoup
 url = 'https://invest.cnyes.com/twstock/TWS/2603/overview'
