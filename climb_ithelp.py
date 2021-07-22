@@ -1,17 +1,3 @@
-***beatuifulsoup.py***
-
-是使用 beautifulsoup 去 parse 取得的 html code
-
-***selenium.py***
-
-是使用 selenium 去模擬使用者瀏覽頁面的行為，取得及parse html 的資料
-
-
-***climb_ithelp.py***
-
-使用 beautifulsoup 去爬取 ithelp 的技術文章
-
-```
 #!pip3 install beautifulsoup4
 
 from bs4 import BeautifulSoup
@@ -53,4 +39,3 @@ for qa_list in qa_lists:
     print(qa_list.find("a", class_="qa-list__info-link").text.strip())
     # 發布時間
     print(qa_list.find("a", class_="qa-list__info-time").text.strip())
-```
